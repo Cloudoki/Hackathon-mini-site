@@ -52,6 +52,9 @@ Sass is a css extension language. It lets you nest, fragment, re-use, import and
 
 ## The Project
 
+The Hackaton site uses a slightly modified public theme called Sydney. You can fuly customise the looks of your website with it!
+For more information check [Sydney's](http://athemes.com/theme/sydney/) website!
+
 ### Plugins
 
 Code Snippets - An easy, clean and simple way to add code snippets to your site.
