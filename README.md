@@ -74,6 +74,8 @@ WordPress Social Login - Allow your visitors to comment and login with social ne
 
 WP Github - Display users Github public repositories, commits, issues and gists.
 
+Please note that several plugins such as Slack and Simple Twitter Tweets require external API's. Make sure you get those API keys in order for the plugins to function :)
+
 
 The team members and Calendar are displayed on the homepage via shortcodes. Once you have create your team and calendar, go to the Shortcodes admin page and save the Team Shortcode Name and Calendar Shortcode ID respectively
 
