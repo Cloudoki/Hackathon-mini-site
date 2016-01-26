@@ -50,9 +50,9 @@ Sass is a css extension language. It lets you nest, fragment, re-use, import and
 `sudo gem install sass`
 
 
-### The Project
+## The Project
 
-## Plugins
+### Plugins
 
 Code Snippets - An easy, clean and simple way to add code snippets to your site.
 
@@ -78,7 +78,7 @@ WP Github - Display users Github public repositories, commits, issues and gists.
 The team members and Calendar are displayed on the homepage via shortcodes. Once you have create your team and calendar, go to the Shortcodes admin page and save the Team Shortcode Name and Calendar Shortcode ID respectively
 
 
-## Instructions
+### Instructions
 
 First, clone the damn-website project to your regular project folders location
 
