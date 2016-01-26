@@ -1,0 +1,48 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "A modern WordPress stack",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Erik Ferreira",
+      "email": "erik@cloudoki.com",
+      "homepage": "https://github.com/Cloudoki/Hackathon-mini-site"
+    }
+  ],
+  "keywords": [
+    "bedrock", "wordpress", "stack", "composer", "wp", "hackaton"
+  ],
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0.12",
+    "johnpbloch/wordpress": "4.4.1",
+
+    "wpackagist-plugin/code-snippets": "2.6.0",
+    "wpackagist-plugin/google-calendar-events": "3.0.13",
+    "wpackagist-plugin/mailchimp-for-wp": "3.1",
+    "wpackagist-plugin/simple-twitter-tweets": "4.2",
+    "wpackagist-plugin/slack": "0.5.1",
+    "wpackagist-plugin/social-media-widget": "4.0.4",
+    "wpackagist-plugin/team-members": "3.0.1",
+    "wpackagist-plugin/user-specific-content": "1.0.5",
+    "wpackagist-plugin/wordpress-social-login": "2.3.0",
+    "wpackagist-plugin/wp-github": "1.2.6"
+  },
+  "extra": {
+    "installer-paths": {
+      "/plugins/{$name}/": ["type:wordpress-plugin"]
+    },
+    "wordpress-install-dir": "web/wp"
+  }
+}
