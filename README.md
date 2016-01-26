@@ -1,2 +1,129 @@
-# Hackathon-mini-site
-The Wordpress generic base for Teamlogs
+# Hackaton-mini-site
+Hackaton mini-site
+
+
+## Install (Mac)
+The days of simple html pages are long behind us, sir. For most of our front-end apps, we distribute static packages, with dependency configuration and branched repo versioning. If this sounds scary, don't worry, its like rainbows and unicorns.
+
+### Prerequisites
+To install the required components for managing and compiling the DAMn website, 
+we'll need following tools in our toolbelt: Composer, Git, npm, Bower and Gulp.
+
+[More info](http://blog.cloudoki.com/set-up-your-local-battleground/)
+
+##### Get HomeBrew
+If you haven't done so, install Brew right away.
+```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+
+##### Composer
+Start with installing [Composer](https://getcomposer.org/), the dependency manager.
+
+```
+brew tap josegonzalez/homebrew-php
+brew install josegonzalez/php/composer
+```
+
+##### Download Github
+If you don't actively use one of the smaller versioning services, you'll probably end up with Github. Good choice too.
+Github has an awesome software client for managing your repositories locally.
+
+**[Download Github for Mac](https://mac.github.com/)**
+
+##### Install Node.js
+[Nodejs](http://nodejs.org/) is basicly backend javascript. It’s lightweight and perfect for local builds of compile/distribution dependent projects. Since we’re taking this seriously, that’s just what we’ll do. Add Node.js and npm with brew:
+
+`brew install node`
+
+##### Instal Gulp
+[Gulp](http://gulpjs.com/) is a Task Runners, which will monitor, compress and compile the project. Gulp a nimble sytar, which makes you feel like you’re doing it for real. Install it with npm:
+
+`npm install -g gulp`
+
+##### Install Bower
+[Bower](http://bower.io/) is the package manager we’ll be using in many projects. Additionally, most of the front-end frameworks come with a bower configuration.
+
+`npm install -g bower`
+
+####Install Sass
+Sass is a css extension language. It lets you nest, fragment, re-use, import and compile css code and files. While we're not using it in every project, you'll smell cupcakes and blow glitter out your working station when you do the first time.
+
+`sudo gem install sass`
+
+
+### The Project
+
+## Plugins
+
+Code Snippets - An easy, clean and simple way to add code snippets to your site.
+
+Simple Calendar - Google Calendar Plugin - Add Google Calendar events to your WordPress site in minutes. 
+
+MailChimp for WordPress - MailChimp for WordPress. Subscribe your WordPress site visitors to your MailChimp lists, with ease.
+
+Simple Twitter Tweets - Display your Tweets on your WordPress site using the new Twitter OAuth API v1.1
+
+Slack - Allows you to send notifications to Slack channels when certain events in WordPress occur.
+
+Social Media Widget - Adds links to all of your social media and sharing site profiles. Tons of icons come in 3 sizes, 4 icon styles, and 4 animations.
+
+Team Members - Create new team members, add their positions, bios, social links and copy-paste the shortcode into any post/page. 
+
+User Specific Content - Allows you to select specific users by user name, or by role name who can view a specific post content or page content.
+
+WordPress Social Login - Allow your visitors to comment and login with social networks such as Twitter, Facebook, Google, Yahoo and more.
+
+WP Github - Display users Github public repositories, commits, issues and gists.
+
+
+The team members and Calendar are displayed on the homepage via shortcodes. Once you have create your team and calendar, go to the Shortcodes admin page and save the Team Shortcode Name and Calendar Shortcode ID respectively
+
+
+## Instructions
+
+First, clone the damn-website project to your regular project folders location
+
+```
+git clone https://github.com/Cloudoki/Hackathon-mini-site.git
+```
+
+Now we willll have to install the roots/bedrock required components.
+
+```
+cd /local/path/to/damn-website
+composer install
+```
+Copy the dotenv file and set up your local environment parameters.
+
+```
+cp .env.example .env
+nano .env
+```
+
+### The Theme
+The theme uses roots/sage as theme stack, install the required components
+
+```
+cd damn-sage
+npm install
+bower install
+```
+
+
+## Usage
+For more info on using roots/bedrock, head to [roots.io/bedrock](https://roots.io/bedrock/).
+
+The theme is managed though Gulp. Some basic commands:
+
+```
+gulp #Compile and optimize the files in your assets directory
+gulp watch #Compile assets when file changes are made
+gulp --production #Compile assets for production
+```
+
+To connect the theme folder with the bedrock theme directory, add a symlink.
+
+```
+ln -s /path/to/root/sydney ../web/app/themes/sydney
+```
+
+For more info on using roots/sage, head to [roots.io/sage docs](https://roots.io/sage/docs/theme-development/).
