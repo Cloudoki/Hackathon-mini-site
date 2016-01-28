@@ -6,7 +6,7 @@ Hackaton mini-site
 The days of simple html pages are long behind us, sir. For most of our front-end apps, we distribute static packages, with dependency configuration and branched repo versioning. If this sounds scary, don't worry, its like rainbows and unicorns.
 
 ### Prerequisites
-To install the required components for managing and compiling the DAMn website, 
+To install the required components for managing and compiling the Hackaton website, 
 we'll need following tools in our toolbelt: Composer, Git, npm, Bower and Gulp.
 
 [More info](http://blog.cloudoki.com/set-up-your-local-battleground/)
@@ -85,16 +85,23 @@ The team members and Calendar are displayed on the homepage via shortcodes. Once
 
 ### Instructions
 
-First, clone the damn-website project to your regular project folders location
+First, clone the hackaton-mini-site project to your regular project folders location
 
 ```
 git clone https://github.com/Cloudoki/Hackathon-mini-site.git
 ```
 
+If you wish to clone and rename
+
+```
+git clone https://github.com/Cloudoki/Hackathon-mini-site.git folder-name
+```
+
+
 Now we willll have to install the roots/bedrock required components.
 
 ```
-cd /local/path/to/damn-website
+cd /local/path/to/hackaton-mini-site
 composer install
 ```
 Copy the dotenv file and set up your local environment parameters.
