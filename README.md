@@ -98,44 +98,26 @@ git clone https://github.com/Cloudoki/Hackathon-mini-site.git folder-name
 ```
 
 
-Now we willll have to install the roots/bedrock required components.
+Now we will have to install the required components.
 
 ```
-cd /local/path/to/hackaton-mini-site
+cd /local/path/to/Hackaton-mini-site
 composer install
 ```
-Copy the dotenv file and set up your local environment parameters.
+
+To connect the theme folder with the WP theme directory, add a symlink. Same for the uploads folder (or private plugins) - watch out with the -sf force in the "ln flag", though.
 
 ```
-cp .env.example .env
-nano .env
+ln -s /path/to/root/themes/sydney /path/to/root/web/wp/wp-content/themes/sydney 
+ln -sf /path/to/root/shared/uploads path/to/root/web/wp/wp-content/uploads 
 ```
 
-### The Theme
-The theme uses roots/sage as theme stack, install the required components
+Your local WordPress site will be located at
 
 ```
-cd damn-sage
-npm install
-bower install
+/path/to/root/web/wp
 ```
 
+After that, WordPress will guide you through the installation. Once completed, log in and go to Appearance > Themes and activate the Sydney theme. The go to Plugins and activated the plugins.
 
-## Usage
-For more info on using roots/bedrock, head to [roots.io/bedrock](https://roots.io/bedrock/).
-
-The theme is managed though Gulp. Some basic commands:
-
-```
-gulp #Compile and optimize the files in your assets directory
-gulp watch #Compile assets when file changes are made
-gulp --production #Compile assets for production
-```
-
-To connect the theme folder with the bedrock theme directory, add a symlink.
-
-```
-ln -s /path/to/root/sydney ../web/app/themes/sydney
-```
-
-For more info on using roots/sage, head to [roots.io/sage docs](https://roots.io/sage/docs/theme-development/).
+All is done, happy hacking!
