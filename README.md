@@ -7,7 +7,7 @@ The days of simple html pages are long behind us, sir. For most of our front-end
 
 ### Prerequisites
 To install the required components for managing your WordPress site, 
-we'll need following tools in our toolbelt: Composer, HomeBre.
+we'll need following tools in our toolbelt: Composer, HomeBrew.
 
 [More info](http://blog.cloudoki.com/set-up-your-local-battleground/)
 
