@@ -88,11 +88,10 @@ cd /local/path/to/Hackaton-mini-site
 composer install
 ```
 
-To connect the theme folder with the WP theme directory, add a symlink. Same for the uploads folder (or private plugins) - watch out with the -sf force in the "ln flag", though.
+To connect the theme folder with the WP theme directory, add a symlink. 
 
 ```
 ln -s /path/to/root/themes/sydney /path/to/root/web/wp/wp-content/themes/sydney 
-ln -sf /path/to/root/shared/uploads path/to/root/web/wp/wp-content/uploads 
 ```
 
 Your local WordPress site will be located at
