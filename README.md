@@ -6,8 +6,8 @@ Hackaton mini-site
 The days of simple html pages are long behind us, sir. For most of our front-end apps, we distribute static packages, with dependency configuration and branched repo versioning. If this sounds scary, don't worry, its like rainbows and unicorns.
 
 ### Prerequisites
-To install the required components for managing and compiling the DAMn website, 
-we'll need following tools in our toolbelt: Composer, Git, npm, Bower and Gulp.
+To install the required components for managing your WordPress site, 
+we'll need following tools in our toolbelt: Composer, HomeBre.
 
 [More info](http://blog.cloudoki.com/set-up-your-local-battleground/)
 
