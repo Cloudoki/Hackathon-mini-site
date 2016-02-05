@@ -6,7 +6,7 @@ Hackaton mini-site
 The days of simple html pages are long behind us, sir. For most of our front-end apps, we distribute static packages, with dependency configuration and branched repo versioning. If this sounds scary, don't worry, its like rainbows and unicorns.
 
 ### Prerequisites
-To install the required components for managing and compiling the Hackaton website, 
+To install the required components for managing and compiling the DAMn website, 
 we'll need following tools in our toolbelt: Composer, Git, npm, Bower and Gulp.
 
 [More info](http://blog.cloudoki.com/set-up-your-local-battleground/)
@@ -14,6 +14,9 @@ we'll need following tools in our toolbelt: Composer, Git, npm, Bower and Gulp.
 ##### Get HomeBrew
 If you haven't done so, install Brew right away.
 ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+
+If you're not sure, run `brew -v`.
+
 
 ##### Composer
 Start with installing [Composer](https://getcomposer.org/), the dependency manager.
@@ -28,26 +31,6 @@ If you don't actively use one of the smaller versioning services, you'll probabl
 Github has an awesome software client for managing your repositories locally.
 
 **[Download Github for Mac](https://mac.github.com/)**
-
-##### Install Node.js
-[Nodejs](http://nodejs.org/) is basicly backend javascript. It’s lightweight and perfect for local builds of compile/distribution dependent projects. Since we’re taking this seriously, that’s just what we’ll do. Add Node.js and npm with brew:
-
-`brew install node`
-
-##### Instal Gulp
-[Gulp](http://gulpjs.com/) is a Task Runners, which will monitor, compress and compile the project. Gulp a nimble sytar, which makes you feel like you’re doing it for real. Install it with npm:
-
-`npm install -g gulp`
-
-##### Install Bower
-[Bower](http://bower.io/) is the package manager we’ll be using in many projects. Additionally, most of the front-end frameworks come with a bower configuration.
-
-`npm install -g bower`
-
-####Install Sass
-Sass is a css extension language. It lets you nest, fragment, re-use, import and compile css code and files. While we're not using it in every project, you'll smell cupcakes and blow glitter out your working station when you do the first time.
-
-`sudo gem install sass`
 
 
 ## The Project
