@@ -339,3 +339,66 @@ function check_has_posts( $post ){
 	}
 	return false;
 }
+
+/** Add users extra fields */
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_profile-extras',
+		'title' => 'Profile extra\'s',
+		'fields' => array (
+			array (
+				'key' => 'field_56ae2c49098ef',
+				'label' => 'Profile Avatar',
+				'name' => 'avatar',
+				'type' => 'image',
+				'save_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_56ae2c8f098f0',
+				'label' => 'Profile Twitter',
+				'name' => 'twitter',
+				'type' => 'text',
+				'instructions' => 'Your twitter username',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => 144,
+			),
+			array (
+				'key' => 'field_56ae4124dc159',
+				'label' => 'Profile Github',
+				'name' => 'github',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'ef_user',
+					'operator' => '==',
+					'value' => 'all',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
