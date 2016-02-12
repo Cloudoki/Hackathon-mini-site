@@ -258,6 +258,10 @@ Content
 	padding-bottom: 0;
 	background-color: transparent;
 }
+.entry-content p a {
+	border-bottom: 1px solid #ddd;
+}
+
 /*--------------------------------------------------------------
 Asides
 --------------------------------------------------------------*/
@@ -428,7 +432,7 @@ Repeatable Patterns
 	h1, h2, h3, h4, h5, h6 {
 		color: #443f3f;
 		font-weight: 600;
-		margin: 10px 0 24px;
+		margin: 40px 0 24px;
 	}
 	.text-white { color: #fff !important; }
 	.text-dark { color: #443f3f !important;}
@@ -1029,6 +1033,7 @@ Layout
 	.entry-page p, 
 	.entry-post p {
 		margin-bottom: 24px;
+		line-height: 1.6em;
 	}
 	.entry-post img {
 		margin: 10px 0 20px;
@@ -1461,6 +1466,7 @@ Comments
 }
 .comment-author .avatar {
 	position: absolute;
+	left: -22px;
 }
 .comment-author .fn,
 .comment-metadata {
